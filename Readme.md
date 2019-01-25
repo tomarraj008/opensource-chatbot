@@ -36,7 +36,7 @@ Please note that some nlu training data as well as most stories for the dialogue
 
 `app/static` - chatbot frontend
 
-`rasa_core, rasa_nlu` - repositories for rasa nlu and core. Can be updated with newer versions of the respective repos if needed
+`rasa_core, rasa_nlu` - repositories for [Rasa NLU][rasanlu] and [Rasa Core][rasacore]. Can be updated with newer versions of the respective repos if needed
 
 `dialogue_log` - frontend and backend for logging component. For details about the component and how to install it please visit the respective  [Readme](/dialogue_log/Readme.md)
 
