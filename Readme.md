@@ -1,14 +1,18 @@
-HR-Bot with Rasa NLU and Rasa Core
+# HR-Chatbot for candidates
+
+The functional scope of the implemented prototype covers the first tasks of a Human Ressources chatbot for candidates.
+For using a conversation to find a suitable job, a data structure for jobs was designed and implemented that allows searching across multiple levels of abstraction. Furthermore, a logging component provides the possibility to log conversations and therefore allows an iterative improvement of the system.
+
 
 ## Installation + Running of the bot
 To set up the bot, clone the repo and install rasa:
 
 ```
-pip install rasa_nlu
-pip install rasa_core
+pip install rasa_nlu==0.13.3
+pip install rasa_core==0.12.0
 ```
 
-Please note that some nlu training data as well as most stories for the dialogue management have been removed for data protection reasons. This data is needed for training the respective components. To get this bot working properly you need to get more data for training. Put the stories in `app/data/core` and the nlu data in `app/data/nlu`.
+> Please note that some nlu training data as well as most stories for the dialogue management have been removed for data protection reasons. This data is needed for training the respective components. To get this bot working properly you need to get more data for training. Put the stories in `app/data/core` and the nlu data in `app/data/nlu`.
 
 
 ## Overview of the files
@@ -170,3 +174,6 @@ python3 -m rasa_nlu.convert --data_file nlu.md --out_file nlu2.json --format jso
 [rasaaddons]: https://github.com/mrbot-ai/rasa-addons
 [chatroom]: https://github.com/scalableminds/chatroom
 [rasasdk]: https://github.com/RasaHQ/rasa_core_sdk
+
+
+This project was created as a master thesis at the Hochschule der Medien Stuttgart in cooperation with adorsys GmbH & Co. KG.
